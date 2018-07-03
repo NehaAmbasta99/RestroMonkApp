@@ -1,9 +1,13 @@
-<div *ngFor="let menu of menus" class="card">
-{{menu.menuId}}
-{{menu.menuName}}
-{{menu.menuQuantity}}
-{{menu.menuPrice}}
-{{menu.category.categoryId}}
-{{menu.category.categoryName}}
-</div>
 {{title}}
+<div *ngFor="let menu of menus" class="card text-align-center">
+    <div class="card-header bg-primary">
+            Menus
+    </div>
+    <div class="card-content">
+            <span class="col-xs-12 d-block">Id:{{menu.menuId}}</span>
+            <span class="col-xs-12 d-block">Name: {{menu.menuName}}</span>
+            <span class="col-xs-12 d-block">Price: {{menu.menuPrice}}</span>
+            <span class="col-xs-12 d-block">Category Id: {{menu.category.categoryId}}</span>
+            <span class="col-xs-12 d-block">Category Name: {{menu.category.categoryName}}</span>
+    </div>
+</div>

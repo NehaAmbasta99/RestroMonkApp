@@ -1,6 +1,7 @@
 import { OnInit,Component } from "@angular/core";
 import { IMenu } from "src/app/_models/menu";
 import { ICategory } from "src/app/_models/category";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector:'menu',
@@ -15,7 +16,6 @@ export class MenuComponent implements OnInit{
 this.menus.push({menuId :1,
                 menuName : 'Tea',
 menuPrice:5,
-menuQuantity : 1,
 category:this.category});
     }
 
